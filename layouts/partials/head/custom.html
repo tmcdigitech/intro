@@ -1,0 +1,8 @@
+<!-- You can add custom elements to the page header here. -->
+{{ if .Params.asciinema }}
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/asciinema-player.css" />
+{{ end }}
+<link href="{{ .Site.BaseURL }}favicon.ico" rel="shortcut icon" />
+
+<script src="https://cdn.jsdelivr.net/npm/quizdown@0.4.1/public/build/quizdown.min.js"></script>
+<script>quizdown.init();</script>
